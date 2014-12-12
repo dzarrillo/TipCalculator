@@ -176,6 +176,9 @@ public class MainActivity extends Activity implements OnSeekBarChangeListener, T
 			
 		case R.id.totalPersonsSeekBar:
 			numberOfPersons = progress;
+			if (numberOfPersons == 0) {
+				numberOfPersons = 1;
+			} 
 			upDateSharedCheck();
 			break;
 		}
